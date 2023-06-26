@@ -1,4 +1,4 @@
-
+//@ts-check
 // Part 1
 
 const provinces = ['Western Cape', 'Gauteng', 'Northern Cape', 'Eastern Cape', 'KwaZulu-Natal', 'Free State']
@@ -44,7 +44,17 @@ const provinceObject = names.reduce((obj, name, index) => {
     return obj;
   }, {});
   
-  console.log(provinceObject);
-  
+console.log(provinceObject);
+ 
 
-  //Part 2
+//Part 2
+
+const products = [
+    { product: 'banana', price: "2" },
+    { product: 'mango', price: 6 },
+    { product: 'potato', price: ' ' },
+    { product: 'avocado', price: "8" },
+    { product: 'coffee', price: 10 },
+    { product: 'tea', price: '' },
+  ]
+
