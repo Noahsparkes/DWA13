@@ -19,12 +19,22 @@ names.forEach((name, index) => {
   const uppercaseProvinces = provinces.map(province => province.toUpperCase());
 console.log(uppercaseProvinces);
 
-//using map to create an ew array with the amount of charicters in each name:
+//using 'map' to create an ew array with the amount of charicters in each name:
  const nameLengths = names.map(name => name.length);
 console.log(nameLengths);
 
-//using sort to sort all the provinces alphabetically:
+//using 'sort' to sort all the provinces alphabetically:
 const sortedProvinces = provinces.sort();
 console.log(sortedProvinces);
 
-//
+//using 'filter' to remove provinces with the word "Cape" and returning the remaining count:
+
+const filteredProvinces = provinces.filter(province => !province.includes('Cape'));
+const remainingCount = filteredProvinces.length;
+
+console.log(remainingCount);
+
+//Using 'map' and 'some' to create a boolean array indicating wether a name contains an 'S' character:
+
+const hasSCharacter = names.map(name => name.includes('S'));
+console.log(hasSCharacter);
